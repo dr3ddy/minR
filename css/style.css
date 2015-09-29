@@ -1,0 +1,261 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+body {
+	font-family: 'Raleway', Century Gothic;
+	height: 5000px;
+}
+
+/* ------------------------------------------------------
+					Banner
+--------------------------------------------------------- */
+
+.banner {
+	position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-wrapper {
+	background: rgba(0,0,0,0.7);
+	display: table;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+	text-align: center;
+}
+
+.banner-content {
+	display: table-cell;
+    width: 100%;
+    height: 100%;
+	vertical-align: middle;
+	color: #FFF;
+}
+
+.banner-content h1 {
+	font-size: 64px;
+	font-weight: 700;
+	margin: 5px 0 15px;	
+}
+
+.banner-scroll {	
+	display: inline-block;
+    position: absolute;	
+    left: 0;
+    right: 0;
+    margin: 0 auto;	
+    bottom: 15px;	
+	text-align: center;
+}
+
+.banner-scroll .scroll {
+	width: 120px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.banner-scroll a.scroll:hover {	
+	-moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+	color: #FC4349;
+}
+
+.banner-scroll a.scroll {
+	color: #AAA;
+}
+
+/* ------------------------------------------------------
+					Navigation
+--------------------------------------------------------- */
+.navbar-white {
+	background: #FFF !important;
+	color: #000 !important;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+
+.navbar-white .navbar-nav>li>a:hover  {
+	color:#FC4349 !important;
+	/*color:#E74C3C !important;*/
+}
+
+.navbar-custom {
+	background: rgba(255,255,255,0.3);
+	color: #000;
+	border: none;
+	padding: 5px 0;	
+}
+
+.navbar-custom .navbar-nav>li>a, .navbar-custom .navbar-nav>li>a:focus{
+	text-transform: uppercase;
+	background-color: transparent !important;
+	color: inherit;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.navbar-custom .navbar-nav>li>a:hover  {
+	color:#FFF;
+}
+
+.navbar-custom  .navbar-nav>.active>a, .navbar-custom .navbar-nav>.active>a:focus, .navbar-custom .navbar-nav>.active>a:hover {
+    background-color: transparent !important;
+	color: inherit;
+	border-bottom: 3px solid #FC4349;
+}
+
+
+.navbar-custom .navbar-brand {
+	font: 700 23px/1.26 'Raleway', serif, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #000 !important;
+	/*margin-left: 5px !important;*/
+}
+
+.navbar-custom .container {
+	height: 100%;
+}
+
+.navbar-custom .nav-menu-custom {
+	height: 100% !important;
+}
+
+.nav-menu-custom>ul, .nav-menu-custom>ul>li, .nav-menu-custom>ul>li>a {
+	height: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+	font-size: 13px;
+    line-height: 26px;
+    padding: 11px 29px;	
+	margin-right: 32px;
+    margin-bottom: 12px
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.3);
+    text-align: center;
+	text-transform: uppercase;
+}
+
+.button-blue {
+	background: #2980B9;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.button-blue:hover, a.button-blue:focus  {
+	background: #1870A7;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------
+					Section
+--------------------------------------------------------- */
+.section {
+	padding: 80px 0px 100px;
+}
+
+.section .title {
+	font-size: 40px;
+	font-weight: 500;
+	padding-bottom: 10px;
+}
+
+.section .quote {
+	font-size: 18px;
+	font-style: italic;
+    line-height: 32px;
+    text-align: center;
+    text-transform: none;
+	margin-bottom: 35px;
+}
+
+/* ------------------------------------------------------
+					Profile
+--------------------------------------------------------- */
+#profile {
+	background: #ECF0F1;
+	color: #2980B9;
+}
+
+.profile-about {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+.subtitle {
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.profile-about p {
+	margin-bottom: 25px;
+	line-height: 2.2em;
+}
+
+.profile-img img {
+	width: 100%;
+	border: 3px solid #fff;
+}
+
+.profile-img {
+	height: 60%;
+	width: 100%;
+	border: 3px solid #fff;
+	background: url('../img/profile-1.jpg');
+	background-size: cover;
+}
+
+.profile-contact h5 {
+	/*border-bottom: 1px solid #DBE0E1;*/
+	margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.brdr-right {
+	border-right: 1px solid #E0E0E0;
+}
+
+.text-profile{
+	background: rgba(0,0,0,0.7);
+	margin-top: 90%;
+	width: 100%;
+	height: 60px;
+}
+
+.text-profile h3 {	
+	font-family: 'Pacifico';	
+}
+
+.text-profile h3, .text-profile p {
+	color: #FFF;
+	text-align: center;
+}
+
+/* ------------------------------------------------------
+					Transition
+--------------------------------------------------------- */
+#left, #right {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-delay: 0.125s;
+  opacity: 0;
+}
