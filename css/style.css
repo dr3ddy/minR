@@ -130,6 +130,11 @@ body {
 	height: 100%;
 }
 
+
+/* ------------------------------------------------------
+					Common
+--------------------------------------------------------- */
+
 .text-center {
 	text-align: center;
 }
@@ -141,6 +146,24 @@ body {
   display: flex;
 }
 
+.brdr-right {
+	border-right: 1px solid #E0E0E0;
+}
+
+.progress {
+	height: 30px;
+}
+
+.progress-text {
+	position: absolute;
+	margin: 5px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* ------------------------------------------------------
+					Button
+--------------------------------------------------------- */
 .button {
 	font-size: 13px;
     line-height: 26px;
@@ -229,10 +252,6 @@ a.button-blue:hover, a.button-blue:focus  {
 	/*border-bottom: 1px solid #DBE0E1;*/
 	margin-bottom: 12px;
     padding-bottom: 12px;
-}
-
-.brdr-right {
-	border-right: 1px solid #E0E0E0;
 }
 
 .text-profile{
