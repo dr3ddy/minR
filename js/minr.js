@@ -14,6 +14,15 @@ $(document).ready(function() {
 	});
 });
 
+$('#skill').waypoint(function() {
+	$('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width:$(this).attr('data-percent')
+		},2000);
+	});
+},
+{ offset: '90%', triggerOnce: true });
+
 $(window).scroll(function() {			
 	if($(this).scrollTop() > 100) { 
 		$('.navbar').addClass('navbar-white'); 

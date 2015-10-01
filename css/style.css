@@ -154,11 +154,15 @@ body {
 	height: 30px;
 }
 
+.progress-bar {
+	text-align: left;	
+}
+
 .progress-text {
-	position: absolute;
-	margin: 5px;
-	font-size: 18px;
-	font-weight: 600;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	height: 30px;
 }
 
 /* ------------------------------------------------------
@@ -269,6 +273,15 @@ a.button-blue:hover, a.button-blue:focus  {
 	color: #FFF;
 	text-align: center;
 }
+
+/* ------------------------------------------------------
+					Skills
+--------------------------------------------------------- */
+#skill {
+	
+}
+
+
 
 /* ------------------------------------------------------
 					Transition
