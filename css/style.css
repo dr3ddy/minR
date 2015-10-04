@@ -7,6 +7,36 @@ body {
 	height: 5000px;
 }
 
+#preloader {
+	background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.preload-msg {
+	background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
+}
+
+#preload-status, .preload-msg {
+	background-image: url(../img/preloader.GIF);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
+
 /* ------------------------------------------------------
 					Banner
 --------------------------------------------------------- */
@@ -165,6 +195,15 @@ body {
 	height: 30px;
 }
 
+.text-upper {
+	text-transform: uppercase;
+}
+
+.last-row {
+	margin-right: -15px;
+    margin-left: -15px;
+}
+
 /* ------------------------------------------------------
 					Button
 --------------------------------------------------------- */
@@ -211,7 +250,7 @@ a.button-blue:hover, a.button-blue:focus  {
     line-height: 32px;
     text-align: center;
     text-transform: none;
-	margin-bottom: 35px;
+	margin-bottom: 50px;
 }
 
 /* ------------------------------------------------------
@@ -279,6 +318,255 @@ a.button-blue:hover, a.button-blue:focus  {
 --------------------------------------------------------- */
 #skill {
 	
+	color: #434343;
+}
+
+
+/* ------------------------------------------------------
+					Education
+--------------------------------------------------------- */
+#education {
+	background: #ECF0F1;
+	color: #434343;
+}
+
+.education-timeline {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.education-timeline:before {
+    background-color: #E0E0E0;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    z-index: 0;
+}
+
+.education-timeline .edu-icon {
+	float: right;
+    margin: -6px -35px 0 0;
+    color: #000;
+    text-align: center;
+    background-color: #E0E0E0;
+    border-radius: 6px;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+	font-size: 18px;
+}
+
+.education-timeline .column-left {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.education-timeline .column-right {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.education-timeline .row {
+	padding-bottom: 50px;
+}
+
+
+/* ------------------------------------------------------
+					Education
+--------------------------------------------------------- */
+#experience {
+	color: #434343;
+}
+
+.experience-timeline {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.experience-timeline:before {
+    background-color: #E0E0E0;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    z-index: 0;
+}
+
+.experience-timeline .edu-icon {
+	float: right;
+    margin: -6px -35px 0 0;
+    color: #000;
+    text-align: center;
+    background-color: #E0E0E0;
+    border-radius: 6px;
+    height: 40px;
+    width: 40px;
+    padding-top: 10px;
+	font-size: 18px;
+}
+
+.experience-timeline .column-left {
+    text-align: right;
+    margin-right: 30px;
+}
+
+.experience-timeline .column-right {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.experience-timeline .row {
+	padding-bottom: 50px;
+}
+
+.experience-timeline .last-row {
+	padding-bottom: 0px;
+}
+
+/* ------------------------------------------------------
+					Stats
+--------------------------------------------------------- */
+#stats {
+	background: #ECF0F1;
+}
+
+.stat-icon {
+	margin-bottom: 10px;
+    font-size: 32px;
+    color: #222;
+}
+
+
+/* ------------------------------------------------------
+					Portfolio
+--------------------------------------------------------- */
+
+#portfolio-controls-wrapper {
+    text-align: center;
+    float: none;
+    width: 100%;
+}
+
+.center-pills {
+    display: inline-block;
+}
+
+#grid .mix {
+	width: 200px;
+    height: 150px;
+    vertical-align: top;
+    margin: 20px 20px 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.portfolio-grid {
+	margin-top: 20px;
+}
+
+.item {
+	padding: 0;
+}
+
+.portfolio-grid .item > .overlay {
+    position: relative;
+    z-index: 5;
+}
+
+.portfolio-grid .item > .overlay:before {
+	position: absolute;
+    z-index: 10;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio-grid .item > .overlay:hover:before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-grid .item > .overlay:hover > .item-link {
+    opacity: 0.9;
+}
+
+.portfolio-grid .item > .overlay:hover > .item-link > a.magnify {
+    left: 0;
+}
+
+.portfolio-grid .item > .overlay:hover > .item-link > a.magnify {
+    background-color: #2e2e2e;
+}
+
+
+.portfolio-grid .item > .overlay > .item-link {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    width: 88px;
+    height: 48px;
+    margin-top: -48px;
+    margin-left: -44px;
+    opacity: 0;
+}
+
+.portfolio-grid .item > .overlay > .item-link > a {
+    display: block;
+	position: absolute;
+	top: 0;
+	width: 48px;
+	height: 48px;
+	line-height: 48px;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.portfolio-grid .item > .overlay > .item-link > a.magnify {
+	left: 0;
+	background-color: #c80a48;
+}
+
+
+
+/* ------------------------------------------------------
+					Timeline - Common
+--------------------------------------------------------- */
+.timeline-col-title, .timeline-col-duration {
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+
+.timeline-col-org {
+	font-size: 16px;
+	font-weight: 500;
+	padding-bottom: 5px;
+}
+
+.timeline-col-location , .timeline-col-desc{
+	font-size: 15px;
 }
 
 

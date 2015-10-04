@@ -1,3 +1,8 @@
+$(window).load(function() {
+	$('#preload-status').fadeOut();
+	$('#preloader').delay(350).fadeOut('slow');
+});
+	
 $(document).ready(function() {
 	
 	$('body').scrollspy({
@@ -12,6 +17,10 @@ $(document).ready(function() {
 		}, 1000);
 		e.preventDefault();
 	});
+});
+
+$('.magnify').magnificPopup({
+  type: 'image'
 });
 
 $('#skill').waypoint(function() {
