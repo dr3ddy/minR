@@ -10,7 +10,7 @@ $(document).ready(function() {
 			offset: 50
 	});
 	
-	$('a[href*=#]').bind("click", function(e){
+	$('#navbar a[href*=#], .banner-scroll a[href*=#]').bind("click", function(e){
 		var target = $(this);
 		$('html, body').stop().animate({
 			scrollTop: $(target.attr('href')).offset().top
@@ -20,7 +20,7 @@ $(document).ready(function() {
 });
 
 $('.magnify').magnificPopup({
-  type: 'image'
+   type: 'image',
 });
 
 $('#skill').waypoint(function() {
@@ -69,3 +69,25 @@ $('#right').waypoint(function() {
 	$(this).toggleClass('animate slideInRight');
 },
 { offset: '90%', triggerOnce: true });
+
+$('#portfolio-grid').isotope({
+	animationEngine: 'best-available',
+	animationOptions: {
+		duration: 250,
+		easing: 'easeInOutSine',
+		queue: false
+	}
+});
+
+$('#portfolio-controls').find('a').click(function (e) {
+	var currentOption = $(this).data('cat');
+	$('#portfolio-controls').find('a').removeClass('active');
+	$(this).addClass('active');
+	if (currentOption !== '*') {
+		currentOption = '.' + currentOption;
+	}
+	$('#portfolio-grid').isotope({
+		filter: currentOption
+	});
+	return false;
+});
