@@ -103,14 +103,11 @@ body {
 /* ------------------------------------------------------
 					Navigation
 --------------------------------------------------------- */
-.navbar-white {
-	background: #FFF !important;
-	color: #000 !important;
+.navbar-opaque {	
 	box-shadow: 0 1px 6px rgba(0,0,0,0.3);
 }
 
-.navbar-white .navbar-nav>li>a:hover  {
-	color:#FC4349 !important;
+.navbar-opaque .navbar-nav>li>a:hover  {
 	/*color:#E74C3C !important;*/
 }
 
@@ -204,6 +201,46 @@ body {
     margin-left: -15px;
 }
 
+.inline-item {
+	display: table;
+	margin: auto;
+	overflow-y: auto;
+	max-height: 85%;
+}
+
+.inline-item .inline-item-content {
+	/*max-height: 85%;*/
+	max-width: 550px;
+	overflow: auto;
+}
+
+.inline-item-content {
+	margin: auto;
+	left:0;
+	right:0;
+}
+
+.inline-item-content h4 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.inline-item-content p {
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.inline-item-img {
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 30px;
+}
+
+.inline-item-img img{
+	width: 100%;
+	height: auto;
+}
+
 /* ------------------------------------------------------
 					Button
 --------------------------------------------------------- */
@@ -217,18 +254,6 @@ body {
     box-shadow: 0 2px 2px rgba(0,0,0,.3);
     text-align: center;
 	text-transform: uppercase;
-}
-
-.button-blue {
-	background: #2980B9;
-	color: #FFF;
-	text-decoration: none;
-}
-
-a.button-blue:hover, a.button-blue:focus  {
-	background: #1870A7;
-	color: #FFF;
-	text-decoration: none;
 }
 
 /* ------------------------------------------------------
@@ -256,11 +281,6 @@ a.button-blue:hover, a.button-blue:focus  {
 /* ------------------------------------------------------
 					Profile
 --------------------------------------------------------- */
-#profile {
-	background: #ECF0F1;
-	color: #2980B9;
-}
-
 .profile-about {
 	margin: 0;
 	padding: 0;
@@ -309,26 +329,18 @@ a.button-blue:hover, a.button-blue:focus  {
 }
 
 .text-profile h3, .text-profile p {
-	color: #FFF;
 	text-align: center;
 }
 
 /* ------------------------------------------------------
 					Skills
 --------------------------------------------------------- */
-#skill {
-	
-	color: #434343;
-}
+
 
 
 /* ------------------------------------------------------
 					Education
 --------------------------------------------------------- */
-#education {
-	background: #ECF0F1;
-	color: #434343;
-}
 
 .education-timeline {
     border-collapse: collapse;
@@ -340,7 +352,6 @@ a.button-blue:hover, a.button-blue:focus  {
 }
 
 .education-timeline:before {
-    background-color: #E0E0E0;
     bottom: 0;
     content: "";
     left: 50%;
@@ -354,8 +365,7 @@ a.button-blue:hover, a.button-blue:focus  {
 	float: right;
     margin: -6px -35px 0 0;
     color: #000;
-    text-align: center;
-    background-color: #E0E0E0;
+    text-align: center;    
     border-radius: 6px;
     height: 40px;
     width: 40px;
@@ -381,9 +391,7 @@ a.button-blue:hover, a.button-blue:focus  {
 /* ------------------------------------------------------
 					Education
 --------------------------------------------------------- */
-#experience {
-	color: #434343;
-}
+
 
 .experience-timeline {
     border-collapse: collapse;
@@ -395,7 +403,6 @@ a.button-blue:hover, a.button-blue:focus  {
 }
 
 .experience-timeline:before {
-    background-color: #E0E0E0;
     bottom: 0;
     content: "";
     left: 50%;
@@ -410,7 +417,6 @@ a.button-blue:hover, a.button-blue:focus  {
     margin: -6px -35px 0 0;
     color: #000;
     text-align: center;
-    background-color: #E0E0E0;
     border-radius: 6px;
     height: 40px;
     width: 40px;
@@ -439,10 +445,6 @@ a.button-blue:hover, a.button-blue:focus  {
 /* ------------------------------------------------------
 					Stats
 --------------------------------------------------------- */
-#stats {
-	background: #ECF0F1;
-}
-
 .stat-icon {
 	margin-bottom: 10px;
     font-size: 32px;
@@ -501,10 +503,12 @@ a.button-blue:hover, a.button-blue:focus  {
 
 .portfolio-grid .item > .overlay {
     position: relative;
+    z-index: 5;
 }
 
 .portfolio-grid .item > .overlay:before {
 	position: absolute;
+    z-index: 10;
     content: '';
     top: 0;
     left: 0;
@@ -582,6 +586,55 @@ a.button-blue:hover, a.button-blue:focus  {
 	background-color: #c80a48;
 }
 
+
+.address-list {
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.address-list > li {
+    position: relative;
+	line-height: 2.2em;
+	margin-bottom: 12px;
+}
+
+.address-list > li > i {
+	width: 36px;
+	height: 100%;
+    position: absolute;
+	padding-right: 10px;
+    color: #232323;
+    font-size: 18px;
+	vertical-align: middle;
+	top: 6px;
+	text-align: center;
+}
+
+.address-list > li > div {
+	margin-left: 30px;
+}
+
+.contact-social {
+	margin-top: 100px;
+}
+
+a.social-icon {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	color: #000;
+	background: none repeat scroll 0% 0% #FFF;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.13);
+	margin: 0px 2px;
+	text-align: center;
+}
+
+a.social-icon:hover {
+	background: #2980B9;
+	color: #FFF;
+}
 
 
 

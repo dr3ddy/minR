@@ -1,0 +1,83 @@
+.navbar-opaque {
+	background: #FFF !important;
+	color: #000 !important;
+}
+
+.navbar-opaque .navbar-nav>li>a:hover  {
+	color:#FC4349 !important;
+}
+
+.inline-item {
+	background: #FFF;
+}
+
+.button-blue {
+	background: #2980B9;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.button-blue:hover, a.button-blue:focus  {
+	background: #1870A7;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#profile {
+	background: #ECF0F1;
+	color: #2980B9;
+}
+
+.text-profile h3, .text-profile p {
+	color: #FFF;
+}
+
+#skill {	
+	color: #434343;
+}
+
+.skillbar {	
+	background:#ECF0F1;
+}
+
+.skillbar-title {
+	background: #6adcfa;
+	color:#fff;
+}
+
+.skillbar-bar { 
+	background: #6adcfa;
+}
+
+#education {
+	background: #ECF0F1;
+	color: #434343;
+}
+
+.education-timeline:before {
+    background-color: #E0E0E0;
+}
+
+.education-timeline .edu-icon {
+	background-color: #E0E0E0;
+}
+
+#experience {
+	color: #434343;
+}
+
+.experience-timeline:before {
+    background-color: #E0E0E0;
+}
+
+.experience-timeline .edu-icon {	
+    background-color: #E0E0E0;
+}
+
+#stats {
+	background: #ECF0F1;
+}
+
+#contact {
+	background: #ECF0F1;
+}
